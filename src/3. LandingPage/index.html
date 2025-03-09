@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../output.css" />
+    <title>LandingPage</title>
+  </head>
+  <body class="h-screen bg-[#acf9fa] text-black">
+    <header class="fixed top-0 left-0 w-full px-8 p-2">
+      <nav class="flex justify-between items-center container mx-auto">
+        <a class="font-bold text-xl" href="">TAILWIND</a>
+        <div class="hidden md:flex gap-6 text-lg">
+          <a class="hover:text-gray-700 hover:cursor-pointer" href="#">Home</a>
+          <a class="hover:text-gray-700 hover:cursor-pointer" href="#"
+            >Acerca de</a
+          >
+          <a class="hover:text-gray-700 hover:cursor-pointer" href="#"
+            >Contacto</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex flex-col md:flex-row justify-center items-center px-8 md:px-16 gap-20 h-full">
+      <section>
+        <img class="h-50" src="tailwind.png" alt="" />
+        <h1 class="text-5xl md:text-7xl font-bold my-4">Entrenamos?</h1>
+        <p class="text-lg md:text-xl">
+          Tailwind es <br />
+          cool!
+        </p>
+        <!-- Como la etiquita "a" no se comporta como bloque toca colocarle inline-block -->
+        <a class="mt-6 inline-block bg-black text-white px-6 py-3 rounded-full hover:shadow-2xl transition cursor-pointer" href="#">Entrenar</a>
+      </section>
+      <!-- Con tailwind las imagenes se comportan como contenedores por lo que no se necesita etiquetas que lo contengan -->
+      <img class="w-20 md:w-60" src="img.png" alt="" />
+    </main>
+
+    <footer class="fixed bottom-0 text-center w-full p-2">
+      <span>Tailwind page</span>
+      <span>|</span>
+      <span>Company</span>
+    </footer>
+  </body>
+</html>
